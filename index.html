@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/OIP.nZzkSBXBdDdmfuUbXLkTEgHaHa?w=219&h=219&c=7&r=0&o=7&pid=1.7&rm=3" type="image/x-icon">
+    <title>Simple Counter App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-screen h-screen flex flex-col items-center justify-center bg-transparent">
+    <div id="containeur" class="w-100 flex flex-col items-center gap-5 border border-gray-300 text-center pb-2">
+
+        <!-- Titre de l'application -->
+        <h1 id="titre" class="bg-gray-300 w-full text-center text-4xl p-10 font-semibold"> Counter App</h1>
+
+        <!-- Description de l'application -->
+        <p id="description" class="p-3 text-2xl">This is a simple counter application. Use the buttons Increase, Decrease, or Reset to control the counter.</p>
+
+        <!-- Affichage du compteur -->
+        <div id="compteur" class="text-6xl font-bold p-4">0</div>
+
+        <!-- Boutons de contrôle -->
+        <div id="bouton_containeur" class="flex gap-4">
+            <button class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Increase</button>
+            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Decrease</button>
+            <button class="bg-[#a52a2a] hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
